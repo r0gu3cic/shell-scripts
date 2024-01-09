@@ -1,0 +1,41 @@
+# Ignore compiled binaries and executables
+*.o
+*.out
+*.exe
+
+# Ignore logs and temporary files
+*.log
+*.log.*
+*.swp
+*~
+
+# Ignore user-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore environment-specific files
+.env
+
+# Ignore backup files
+*.bak
+*.backup
+
+# Ignore dependencies (if using package managers)
+/node_modules
+/vendor
+
+# Ignore compiled bytecode (if applicable)
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore shell history files
+.history
+
+# Ignore virtual environment directories (if using virtualenv)
+/.venv
+venv/
+
+# Ignore files generated during build or deployment
+/build
+/dist
