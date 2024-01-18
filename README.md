@@ -15,4 +15,4 @@ This script should check the directory for log files, gzip them, and move them t
 ### pg-dump-backup-and-move-backup-cloud.sh
 
 This script should create a backup of a specific PostgreSQL database and upload that backup and log file about that backup to the cloud, after that, the script should check the local backup directory for any backups or logs older than 3 days and remove them.  
-This script was used for automated backups, script expects to run on a server which has configured PostgreSQL server and s3cmd tool.
+This script was used for automated backups, script expects to run on a server which has configured PostgreSQL server (.pgpass) and s3cmd tool (.s3cmd).
