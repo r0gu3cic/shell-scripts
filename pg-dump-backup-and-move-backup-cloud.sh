@@ -16,7 +16,7 @@ dbdump(){
 movetospace(){
     printf "\n##### Moving backup to space #####\n"
     s3cmd put "$local_backup_directory$timestamp-db.bak" s3://"$do_space"/
-    # I used to run the script using the command ./backup_script.sh > /home/user/backup/$(date +%Y-%m-%d)-backup-log.txt 2>&1
+    # I used to run the script using the command ./pg-dump-backup-and-move-backup-cloud.sh > /home/user/backup/$(date +%Y-%m-%d)-backup-log.txt 2>&1
     s3cmd put "$local_backup_directory$timestamp-backup-log.txt" s3://"$do_space"/
     printf "\n##### Done moving backup to s3://%s/ #####\n" "$do_space"
 }
